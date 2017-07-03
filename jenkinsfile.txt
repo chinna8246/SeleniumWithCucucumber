@@ -1,0 +1,4 @@
+node {
+ checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/chinna8246/SeleniumWithCucucumber.git']]])
+ bat 'mvn verify'
+}
